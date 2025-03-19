@@ -1,0 +1,12 @@
+CREATE TABLE public."Stories" (
+  id SERIAL NOT NULL PRIMARY KEY,
+  title TEXT NOT NULL,
+  text TEXT NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE public."Words" (
+  id SERIAL NOT NULL PRIMARY KEY,
+  word TEXT NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
